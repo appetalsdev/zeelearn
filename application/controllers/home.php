@@ -25,28 +25,9 @@ class home extends CI_Controller {
  
 	public function index()
 	{
-		$this->load->view('index');
+		$data['title'] = 'Dashboard';
+		$this->load->view('index', $data);
 	}
 	
-
-	public function load_data()
-	{
-		$result = $this->db->get('users')->result();
-		//print_r($result);
-		//echo nl2br("\n\n\n");
-
-		$arr_data = array();
-		$i=0;
-		foreach ($result as $r) {
-			$arr_data[$i]['id']=$r->id;
-			$arr_data[$i]['username']=$r->username;
-			$arr_data[$i]['first_name']=$r->first_name;
-			$arr_data[$i]['last_name']=$r->last_name;
-			$arr_data[$i]['address']=$r->address;	
-			$i++;		
-		}
-
-		echo json_encode($arr_data);
-	}	
 	
 }
