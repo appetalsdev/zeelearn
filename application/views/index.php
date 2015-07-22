@@ -31,7 +31,7 @@
 
 				<!-- BEGIN PAGE HEADER-->
 				<h3 class="page-title">
-				Dashboard</h3>
+				<?php echo $title; ?></h3>
 				<div class="page-bar">
 					<ul class="page-breadcrumb">
 						<li>
@@ -40,18 +40,19 @@
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
-							<a href="#">Dashboard</a>
+							<a href="#"><?php echo $title; ?></a>
 						</li>
 					</ul>
 				</div>
 				<!-- END PAGE HEADER-->
 
-				
-				
-			<!-- BEGIN QUICK SIDEBAR -->
-					<?php include ("quick_sidebar.php"); ?>
-			<!-- END QUICK SIDEBAR -->
-	</div>
+				<!-- BEGIN QUICK SIDEBAR -->
+						<?php include ("quick_sidebar.php"); ?>
+				<!-- END QUICK SIDEBAR -->
+
+
+
+			</div>
 	<!-- END CONTAINER -->
 	<!-- BEGIN FOOTER -->
 		<?php include ("footer.php"); ?>
