@@ -27,7 +27,8 @@ class Login extends CI_Controller {
    else
    {
      //Go to private area
-     $this->load->view('admin/index');
+     //$this->load->view('admin/index');
+	 redirect('admin/index');
    }
  }
  
@@ -51,7 +52,6 @@ class Login extends CI_Controller {
        );
        $this->session->set_userdata('logged_in', $sess_array);
      }
-	 redirect('admin/index');
      return TRUE;
    }
    else

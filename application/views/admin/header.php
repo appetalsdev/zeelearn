@@ -41,10 +41,8 @@
 	<div class="page-header-inner container">
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
-			<a href="index.php">
-				<a href="index.php/admin">
-				<p><font size="5" color="red">Zee</font><font size="5" color="white">Learn</font></p>
-				</a>
+			<a href="index.php/admin">
+				<p class="logo-default"><font size="5" color="red">Zee</font><font size="5" color="white">Learn</font></p>
 			</a>
 			<div class="menu-toggler sidebar-toggler">
 				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -440,9 +438,8 @@
 					<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 					<li class="dropdown dropdown-user">
 						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-						<img alt="" class="img-circle" src="assets/admin/layout2/img/avatar3_small.jpg"/>
-						<span class="username username-hide-on-mobile">
-						Nick </span>
+						<img alt="" class="img-circle" src="assets/admin/layout2/img/avatar.png"/>
+						<span class="username username-hide-on-mobile"><?php echo ucfirst($this->session->userdata['logged_in']['username']); ?></span>
 						<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu dropdown-menu-default">

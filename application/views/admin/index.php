@@ -92,7 +92,7 @@
 				
 				
 			<!-- BEGIN QUICK SIDEBAR -->
-					<?php $this->load->view("admin/quick_sidebar.php"); ?>
+					<?php //$this->load->view("admin/quick_sidebar.php"); ?>
 			<!-- END QUICK SIDEBAR -->
 	</div>
 	<!-- END CONTAINER -->

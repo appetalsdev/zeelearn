@@ -52,14 +52,13 @@
 <div class="content">
 	<!-- BEGIN LOGIN FORM -->
 	<!--<form class="login-form" action="index.html" method="post">-->
-	<?php echo validation_errors(); ?>
+	
 	<?php $attributes = array('class' => 'login-form'); ?>
     <?php echo form_open('login', $attributes); ?>
 		<h3 class="form-title">Sign In</h3>
-		<div class="alert alert-danger display-hide">
+		<div class="alert alert-danger <?php if(validation_errors() != false) { echo 'display-show';} else { echo 'display-hide';}?>">
 			<button class="close" data-close="alert"></button>
-			<span>
-			Enter any username and password. </span>
+			<span><?php if(validation_errors() != false) { echo validation_errors(); } else { echo 'Enter username and password'; }?></span>
 		</div>
 		<div class="form-group">
 			<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->

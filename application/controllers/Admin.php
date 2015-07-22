@@ -6,17 +6,18 @@ class Admin extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('session');
+		$this->load->model('Admin_model');
 	}
 	
 	public function index()
 	{
 		$data['title'] = "Dashboard";
-
-        
+		       
 		
 		if($this->session->userdata('logged_in'))
 		{
 			$session_data = $this->session->userdata('logged_in');
+			
 			$this->load->view('admin/header', $data);
 			$this->load->view('admin/index', $data);
 			$this->load->view('admin/footer');
