@@ -31,7 +31,7 @@
 
 				<!-- BEGIN PAGE HEADER-->
 				<h3 class="page-title">
-				Dashboard</h3>
+				<?php echo $title; ?></h3>
 				<div class="page-bar">
 					<ul class="page-breadcrumb">
 						<li>
