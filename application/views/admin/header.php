@@ -478,10 +478,10 @@
 					<!-- END USER LOGIN DROPDOWN -->
 					<!-- BEGIN USER LOGIN DROPDOWN -->
 					<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-					<li class="dropdown dropdown-extended quick-sidebar-toggler">
+					<!--<li class="dropdown dropdown-extended quick-sidebar-toggler">
 	                    <span class="sr-only">Toggle Quick Sidebar</span>
 	                    <i class="icon-logout"></i>
-	                </li>
+	                </li>-->
 					<!-- END USER LOGIN DROPDOWN -->
 				</ul>
 			</div>

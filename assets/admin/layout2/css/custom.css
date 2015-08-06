@@ -17,3 +17,10 @@ Rounded Portlets
 	border-radius: 0px 0px 4px 4px !important;
 }
 */
+
+#addUser .modal-dialog, #editUser .modal-dialog {
+	width:50%;
+}
+#addUser .radio-inline, #editUser .radio-inline {
+	margin-left:20px;
+}

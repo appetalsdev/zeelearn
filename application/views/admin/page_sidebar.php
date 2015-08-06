@@ -21,8 +21,8 @@
 					</li>
 					<li>
 						<a href="profilemanagement.php">
-						<i class="icon-basket"></i>
-						<span class="title">Profile Management</span>
+						<i class="fa fa-users"></i>
+						<span class="title">User Management</span>
 						<span class="arrow "></span>
 						</a>
 							<ul class="sub-menu">
@@ -66,8 +66,8 @@
 					</li>
 					<li>
 						<a href="javascript:;">
-						<i class="icon-rocket"></i>
-						<span class="title">School Setup</span>
+						<i class="fa fa-institution"></i>
+						<span class="title">School Management</span>
 						<span class="arrow "></span>
 						</a>
 						<ul class="sub-menu">
@@ -130,7 +130,7 @@
 					</li>
 										<li>
 						<a href="feesmanagement.php">
-						<i class="icon-diamond"></i>
+						<i class="fa fa-money"></i>
 						<span class="title">Fees Management</span>
 						<span class="arrow "></span>
 						</a>
@@ -138,7 +138,7 @@
 					</li>
 					<li>
 						<a href="transportscheduling.php">
-						<i class="icon-puzzle"></i>
+						<i class="fa fa-bus"></i>
 						<span class="title">Transport Scheduling</span>
 						<span class="arrow "></span>
 						</a>
@@ -159,14 +159,14 @@
 					</li>	
 					<li>
 						<a href="learningcenter.php">
-						<i class="icon-wallet"></i>
+						<i class="fa fa-cube"></i>
 						<span class="title">Learning Center</span>
 						<span class="arrow "></span>
 						</a>
 					</li>			
 					<li>
 						<a href="supportrequest.php">
-						<i class="icon-docs"></i>
+						<i class="fa fa-support"></i>
 						<span class="title">Support Request</span>
 						<span class="arrow "></span>
 						</a>

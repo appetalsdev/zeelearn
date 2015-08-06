@@ -1,3 +1,5 @@
+</div>
+</div>
 <base href="<?php echo base_url();?>">
 	<!-- BEGIN FOOTER -->
 	<div class="page-footer">
@@ -28,13 +30,6 @@
 <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
-<script src="assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
 <script src="assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>

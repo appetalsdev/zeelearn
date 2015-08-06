@@ -49,12 +49,14 @@
 </div>
 <!-- END LOGO -->
 <!-- BEGIN LOGIN -->
-<div class="content">
+<div class="content" ng-app="userLogin">
 	<!-- BEGIN LOGIN FORM -->
 	<!--<form class="login-form" action="index.html" method="post">-->
 	
-	<?php $attributes = array('class' => 'login-form'); ?>
-    <?php echo form_open('login', $attributes); ?>
+	<?php $attributes = array('class' => 'login-form', 'ng-controller'=>'FormController', 'ng-submit'=>'submitForm()'); ?>
+    <?php //echo form_open('login/login_ang', $attributes); ?>
+	<div class="login-form">
+	<form class="form-group" ng-controller="LoginController" ng-submit="submitForm()" role="form" method="post">
 		<h3 class="form-title">Sign In</h3>
 		<div class="alert alert-danger <?php if(validation_errors() != false) { echo 'display-show';} else { echo 'display-hide';}?>">
 			<button class="close" data-close="alert"></button>
@@ -63,11 +65,11 @@
 		<div class="form-group">
 			<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
 			<label class="control-label visible-ie8 visible-ie9">Username</label>
-			<input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username"/>
+			<input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" ng-model="username" required />
 		</div>
 		<div class="form-group">
 			<label class="control-label visible-ie8 visible-ie9">Password</label>
-			<input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password"/>
+			<input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" ng-model="password" required />
 		</div>
 		<div class="form-actions">
 			<button type="submit" class="btn btn-success uppercase">Login</button>
@@ -78,6 +80,7 @@
 		
 		
 	</form>
+	</div>
 	<!-- END LOGIN FORM -->
 	<!-- BEGIN FORGOT PASSWORD FORM -->
 	<form class="forget-form" action="index.html" method="post">
@@ -414,6 +417,12 @@
 <script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
 <script src="assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/login.js" type="text/javascript"></script>
+
+<script src="assets/global/plugins/angularjs/angular.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/angularjs/plugins/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.9.0/ui-bootstrap-tpls.min.js"></script>-->
+<script src="assets/js/script.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
 jQuery(document).ready(function() {     

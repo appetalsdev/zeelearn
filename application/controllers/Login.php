@@ -34,8 +34,8 @@ class Login extends CI_Controller {
  
  function check_database($password)
  {
-	 
-   //Field validation succeeded.  Validate against database
+
+	//Field validation succeeded.  Validate against database
    $username = $this->input->post('username');
 
    //query the database
@@ -60,6 +60,41 @@ class Login extends CI_Controller {
      return false;
    }
  }
+ 
+ function login_ang() {
+	$this->load->library('form_validation');
+	
+	$postdata = file_get_contents('php://input');
+	$request = json_decode($postdata);
+	$username = $request->username;
+	$password = $request->password;
+	$result = $this->Admin_model->login($username, $password);
+	if($result)
+	{
+	 $sess_array = array();
+	 foreach($result as $row)
+	 {
+	   $sess_array = array(
+		 'userid' => $row->id,
+		 'username' => $row->username
+	   );
+	   $this->session->set_userdata('logged_in', $sess_array);
+	 }
+	 echo $result = '{"status" : "success"}';
+	}
+	else
+	{
+	 echo $result = '{"status" : "failure","msg" : "Invalid username or password"}';
+	}
+	
+ }
+ 
+ public function logout()
+	 {
+	   $this->session->unset_userdata('logged_in');
+	   session_destroy();
+	   redirect('login', 'refresh');
+	 }
 
 }
 
